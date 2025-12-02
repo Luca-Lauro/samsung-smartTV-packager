@@ -382,8 +382,8 @@ module.exports = {
         if(fs.existsSync(userConfPath)){
             var userData = JSON.parse(fs.readFileSync(userConfPath));
 
-            if(userData.hasOwnProperty('tizen')){
-                projectName = userData.tizen.name;
+            if(userData.hasOwnProperty('orsay')){
+                projectName = userData.orsay.name;
             }
         }
         else {
