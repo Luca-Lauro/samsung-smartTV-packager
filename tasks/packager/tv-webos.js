@@ -436,8 +436,8 @@ module.exports = {
         if(fs.existsSync(userConfPath)){
             var userData = JSON.parse(fs.readFileSync(userConfPath));
 
-            if(userData.hasOwnProperty('orsay')){
-                projectName = userData.orsay.name;
+            if(userData.hasOwnProperty('webos')){
+                projectName = userData.webos.name;
             }
         }
         else {
